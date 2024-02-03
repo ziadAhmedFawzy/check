@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "arial";
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+body {
+    background-color: #222;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.check div {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.check {
+    text-align: right;
+    margin: 10px 0;
+    margin-right: -22px;
+}
+
+.check .danger {
+    background-color: #ee3c3c;
+}
+
+.check .warning {
+    background-color: #e3ff43;
+}
+
+.check .success {
+    background-color: #00ff37;
+}
+
+.pass {
+    position: relative;
+}
+
+.pass input {
+    background-color: transparent;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 5px 0 0 5px;
+    border-right-color: transparent;
+    padding: 5px;
+    color: #eee;
+}
+
+.pass input:focus {
+    outline: none;
+}
+
+.pass button {
+    background-color: transparent;
+    position: absolute;
+    border: 1px solid #eee;
+    height: 26.4px;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    padding: 5px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 10px 5px;
+    color: #fff;
+    font-size: 10px;
+}
